@@ -24,8 +24,15 @@ body{
 
 header {
     font-size: 1.5rem;
+    color: white;
+    position: relative;
 }
-
+#date{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem 2rem 1rem 0;
+}
 header, form{
     min-height: 20vh;
     display: flex;
@@ -123,9 +130,10 @@ select{
 
 select{
     color: var(--first-color);
-    width: 10rem;
+    width: 13rem;
     cursor: pointer;
     padding: 1rem;
+    font-size: 1.4rem;
     
 }
 
@@ -136,7 +144,7 @@ select{
     right: 0;
     background: var(--first-color);
     pointer-events: none;
-    padding: 1rem;
+    padding: 1.2rem;
     transition: all 0.3s ease;
 }
 
@@ -144,4 +152,29 @@ select{
     background: white;
     color: var(--first-color);
 
+}
+
+@media screen and (max-width : 710px){
+    form input{
+        width:250px;
+    }
+    header h1{
+        font-size: 1.9rem;
+    }
+    #date{
+        font-size: 1.4rem;
+        padding: 0.2rem 1.5rem 0.5rem 0;  
+    }
+    select{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width : 550px){
+    .selectDiv{
+        display: none;
+    }
+    .todo-item{
+        font-size: 1.2rem;
+    }
 }

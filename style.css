@@ -8,12 +8,13 @@
     --second-color: #040405;
 }
 html{
-    background-color: black;
+    background-color: var(--first-color);
 }
 body{
 
     /*background: linear-gradient(20deg, var(--second-color), var(--first-color));*/
     background-image: url("./img/astronomy.jpg");
+    background-size: cover;
     max-width: 1920px;
     max-height: 1310px;
     
